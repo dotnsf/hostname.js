@@ -1,6 +1,5 @@
 //.  app.js
 var express = require( 'express' ),
-    cfenv = require( 'cfenv' ),
     fs = require( 'fs' ),
     app = express();
 
@@ -21,7 +20,6 @@ app.get( '/', function( req, res ){
   });
 });
 
-var appEnv = cfenv.getAppEnv();
-var port = /*appEnv.port ||*/ 3000;
+var port = process.env.PORT || 3000;
 app.listen( port );
 console.log( "server starting on " + port + " ..." );

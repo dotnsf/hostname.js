@@ -1,3 +1,4 @@
 node_modules/
+docker/
 package-lock.json
 npm-debug.log

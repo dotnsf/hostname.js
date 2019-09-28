@@ -5,7 +5,13 @@
         "start": "node app.js"
     },
     "dependencies": {
-        "express": "^4.17.1"
+        "connect-redis": "^3.4.2",
+        "ejs": "^2.7.1",
+        "express": "^4.17.1",
+        "express-session": "^1.16.2",
+        "jsonwebtoken": "^8.5.1",
+        "oauth": "^0.9.15",
+        "request": "^2.88.0"
     },
     "repository": {},
     "engines": {
